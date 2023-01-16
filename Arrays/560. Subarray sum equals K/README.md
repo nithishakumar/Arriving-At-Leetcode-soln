@@ -4,8 +4,8 @@
 Let's look at the brute-force approach. You're going through every sub-array and calculating its 
 sum to check whether it's equal to K.
 
-Consider [1, 2, 3, 4, 5]: <br> <br>
-You're doing [1] <br>
+Consider [1 2 3 4 5]: <br> <br>
+You're doing <br> [1] <br>
              [1 + 2]
              [1 + 2 + 3] <br>
              [1 + 2 + 3 + 4] <br>
