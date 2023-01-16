@@ -6,7 +6,7 @@ sum to check whether it's equal to K.
 
 Consider [1 2 3 4 5]: <br> <br>
 You're doing <br> [1] <br>
-             [1 + 2]
+             [1 + 2] <br>
              [1 + 2 + 3] <br>
              [1 + 2 + 3 + 4] <br>
              [1 + 2 + 3 + 4 + 5] <br> <br>
