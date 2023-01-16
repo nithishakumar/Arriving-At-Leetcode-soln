@@ -61,10 +61,11 @@ ans = 3 :)
 
 Soln:
 1. Sort intervals according to start time.
-2. Iterate through the sorted array.
-3. Pop from heap if heap isn't empty and topmost interval in the heap doesn't overlap with currently encountered meeting.
-4. Push current interval into heap.
-5. Return the size of the heap -> max num of simultaneous meetings :)
+2. Declare a heap with comparator that sorts intervals in ascending order based on end time.
+3. Iterate through the sorted array.
+4. Pop from heap if heap isn't empty and topmost interval in the heap doesn't overlap with currently encountered meeting.
+5. Push current interval into heap.
+6. Return the size of the heap -> max num of simultaneous meetings :)
   
 
 
