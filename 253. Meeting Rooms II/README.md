@@ -57,7 +57,7 @@ i = 3: [1, 15] [16, 30] [0, 30]
 
 ans = 3 :)
 
-Soln (insert just uses basic set operations so it's not described):
+Soln:
 1. Sort intervals according to start time.
 2. Iterate through the sorted array.
 3. Pop from heap if heap isn't empty and topmost interval in the heap doesn't overlap with currently encountered meeting.
