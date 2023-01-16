@@ -17,7 +17,7 @@ And then you'll do <br> [2] <br>
 The redundancy here is that you're calculating [2 + 3 + 4] after having calculated [1 + 2 + 3 + 4] already.
 We could've just subtracted 1 from [1 + 2 + 3 + 4] to get the value of [2 + 3 + 4].
 So, we can try calculating [1 + 2 + 3 + 4 + 5] and as we calculate it, we can store parts of the sum in a map with
-the number of ways we can achieve that sum. <br><br>
+the number of ways we can achieve that sum. 
 
 As we build our map, we will check to see if sum - k exists in the map. Why are we doing this?
 Let's say k = 6. If we have a subarray like [0 1 -1 1 1 4 2] and we have iterated up till idx 5.
