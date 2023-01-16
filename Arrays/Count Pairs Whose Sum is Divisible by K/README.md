@@ -3,7 +3,7 @@
 
 The Two-sum approach is the first thing I think of. We know how to find pairs with sum = K.
 
-### An important thing to notice is that pairs with sum divisible by K will have remainders that add up to K and 0.
+### An important thing to notice is that pairs with sum divisible by K will have remainders that add up to K or 0.
 
 Now, we can store the number of elements along with their % K value in an unordered map.
 
