@@ -48,7 +48,9 @@ i = 2: [2, 9] [1, 15] [0, 30]
 // pop off [2, 9] since it ends before [16, 30]
 
 // If I pop off [1, 15] as well since it ends before [16, 30], then the answer results to be 2 when the correct answer
+
 // is 3. We don't use a while loop because we are using one room that has become vacant for the meeting. We can't use
+
 // two rooms for a single meeting! 
 
 i = 3: [1, 15] [16, 30] [0, 30]
