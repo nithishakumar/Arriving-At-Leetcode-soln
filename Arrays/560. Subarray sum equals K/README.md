@@ -4,16 +4,16 @@
 Let's look at the brute-force approach. You're going through every sub-array and calculating its 
 sum to check whether it's equal to K.
 
-Consider [1, 2, 3, 4, 5]:
-You're doing [1]
+Consider [1, 2, 3, 4, 5]: <br>
+You're doing [1] <br>
              [1 + 2]
-             [1 + 2 + 3]
-             [1 + 2 + 3 + 4]
-             [1 + 2 + 3 + 4 + 5]
-And then you'll do [2]
-                   [2 + 3]
-                   [2 + 3 + 4]
-                   [2 + 3 + 4 + 5]
+             [1 + 2 + 3] <br>
+             [1 + 2 + 3 + 4] <br>
+             [1 + 2 + 3 + 4 + 5] <br> <br>
+And then you'll do [2] <br>
+                   [2 + 3] <br>
+                   [2 + 3 + 4] <br>
+                   [2 + 3 + 4 + 5] <br>
 The redundancy here is that you're calculating [2 + 3 + 4] after having calculated [1 + 2 + 3 + 4] already.
 We could've just subtracted 1 from [1 + 2 + 3 + 4] to get the value of [2 + 3 + 4].
 So, we can try calculating [1 + 2 + 3 + 4 + 5] and as we calculate it, we can store parts of the sum in a map with
@@ -24,9 +24,9 @@ Let's say k = 6. If we have a subarray like [0 1 -1 1 1 4 2] and we have iterate
 Our sum = 6. If we do map.find(6 - 6) to check if 0 exists in the map, we are checking to
 see how many ways exist to chop off a sum of 0 one from our array so that we can get a sum of 6.
 In this case, our map would contain the following values until now:
-[0] -> 2
-[1] -> 2
-[2] -> 1
+[0] -> 2 <br>
+[1] -> 2 <br>
+[2] -> 1 <br>
 We can chop off 0 in 2 ways ([0], [0, 1, -1]) from our current subarray ([0 1 -1 1 1 4]) to get a sum of 6.
 
 But is that all? No! We can also chop off nothing to get the subarray [0 1 -1 1 1 4] which also adds up to 6.
