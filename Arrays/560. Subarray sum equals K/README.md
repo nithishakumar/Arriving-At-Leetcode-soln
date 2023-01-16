@@ -13,36 +13,36 @@ You're doing [1] <br>
 And then you'll do [2] <br>
                    [2 + 3] <br>
                    [2 + 3 + 4] <br>
-                   [2 + 3 + 4 + 5] <br>
+                   [2 + 3 + 4 + 5] <br> <br>
 The redundancy here is that you're calculating [2 + 3 + 4] after having calculated [1 + 2 + 3 + 4] already.
 We could've just subtracted 1 from [1 + 2 + 3 + 4] to get the value of [2 + 3 + 4].
 So, we can try calculating [1 + 2 + 3 + 4 + 5] and as we calculate it, we can store parts of the sum in a map with
-the number of ways we can achieve that sum. 
+the number of ways we can achieve that sum. <br><br>
 
 As we build our map, we will check to see if sum - k exists in the map. Why are we doing this?
 Let's say k = 6. If we have a subarray like [0 1 -1 1 1 4 2] and we have iterated up till idx 5.
 Our sum = 6. If we do map.find(6 - 6) to check if 0 exists in the map, we are checking to
 see how many ways exist to chop off a sum of 0 one from our array so that we can get a sum of 6.
-In this case, our map would contain the following values until now:
+In this case, our map would contain the following values until now: <br>
 [0] -> 2 <br>
 [1] -> 2 <br>
 [2] -> 1 <br>
-We can chop off 0 in 2 ways ([0], [0, 1, -1]) from our current subarray ([0 1 -1 1 1 4]) to get a sum of 6.
+We can chop off 0 in 2 ways ([0], [0, 1, -1]) from our current subarray ([0 1 -1 1 1 4]) to get a sum of 6. <br>
 
 But is that all? No! We can also chop off nothing to get the subarray [0 1 -1 1 1 4] which also adds up to 6.
-So, by default we will set [0] = 1 before iterating so that we can account for the "chop off nothing" case.
+So, by default we will set [0] = 1 before iterating so that we can account for the "chop off nothing" case. <br>
 
 So, we can chop off a sum of 0 in 3 ways: [], [0], [0, 1, -1] to get our subarray of sum 6 so far. Thus, we will
-add 3 to our answer for [0 1 -1 1 1 4], [1 -1 1 1 4], and [1 1 4] -> all of which add up to 6.
+add 3 to our answer for [0 1 -1 1 1 4], [1 -1 1 1 4], and [1 1 4] -> all of which add up to 6. <br>
 
-To be more clear, here's why we add [0] = 1 to our map before iterating: 
-Look at this array [6] when k = 6.
+To be more clear, here's why we add [0] = 1 to our map before iterating: <br>
+Look at this array [6] when k = 6. <br>
 If we iterate through this array and then do map.find(6 - 6) to look for a 0, we get nothing and our ans ends up being 0. But that's wrong!
 We do have a subarray that adds up to 6. So, we will add a [0] -> 1 to our array for the empty subarray before iterating.
 
 
 Soln:
-1. Add [0] = 1 to an  unordered_map<int, int> which maps prefix sum to frequency.
+1. Add [0] = 1 to an  unordered_map<int, int> which maps prefix sum to frequency. 
 2. Iterate through the array. As you iterate:
  - Check to see if sum - k exists in the map. If it does, add the value it maps to your final ans for how many ways you can chop sub arrays to get this sum.
  - Do map[sum]++
