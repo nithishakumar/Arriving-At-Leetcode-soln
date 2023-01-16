@@ -1,7 +1,7 @@
 # 974. Subarray sum divisible by K 👩🏻‍💻 
 > View the problem at: https://leetcode.com/problems/subarray-sums-divisible-by-k/
 
-Use the same approach described in subarray sum equals to k:
+Use the same approach described in subarray sum equals to k: https://github.com/nithishakumar/arriving-at-DSA-solns/tree/main/Arrays/560.%20Subarray%20sum%20equals%20K
 
 The only thing different is, the key would be sum % k to chop off subarrays with the remainder required so 
 that we can get a subarray that is perfectly divisible by k.
