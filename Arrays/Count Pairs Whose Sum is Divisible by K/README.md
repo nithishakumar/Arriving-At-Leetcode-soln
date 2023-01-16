@@ -3,7 +3,7 @@
 
 The Two-sum approach is the first thing I think of. We know how to find pairs with sum = K.
 
-### An important thing to notice is that pairs with sum divisible by K will have remainders that add up to K and 0.
+### An important thing to notice is that pairs with sum divisible by K will have remainders that add up to K or 0.
 
 Now, we can store the number of elements along with their % K value in an unordered map.
 
@@ -14,7 +14,7 @@ if K = 4, and there are 3 values that have remainder 1 and 2 values that have re
 Think of it like each value with remainder 1 can form a pair with each value with remainder 3.
 
 <p align="center">
-  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/42.%20Trapping%20Rain%20Water/img/rainwatertrap.png" /> 
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Arrays/Count%20Pairs%20Whose%20Sum%20is%20Divisible%20by%20K/img/Picture1.png" /> 
  </p>
 
 We can then find the number of pairs that can be formed with the number of values that have remainder 0
