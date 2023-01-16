@@ -4,7 +4,7 @@
 Looking at the first example, my instant thought is that we can trap water between 2 blocks.
 
 <p align="center">
-  <img src="[/img/rainwatertrap.png](https://github.com/nithishakumar/arriving-at-DSA-solns/tree/main/42.%20Trapping%20Rain%20Water/img)" /> 
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/tree/main/42.%20Trapping%20Rain%20Water/img" /> 
  </p>
 
 For the second position (idx = 1), we would take the minimum of the height of its neighbors and that would be the 
