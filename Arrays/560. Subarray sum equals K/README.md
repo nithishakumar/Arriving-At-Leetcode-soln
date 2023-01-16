@@ -10,7 +10,7 @@ You're doing <br> [1] <br>
              [1 + 2 + 3] <br>
              [1 + 2 + 3 + 4] <br>
              [1 + 2 + 3 + 4 + 5] <br> <br>
-And then you'll do [2] <br>
+And then you'll do <br> [2] <br>
                    [2 + 3] <br>
                    [2 + 3 + 4] <br>
                    [2 + 3 + 4 + 5] <br> <br>
