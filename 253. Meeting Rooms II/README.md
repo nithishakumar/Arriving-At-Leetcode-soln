@@ -27,9 +27,11 @@ will end first. So, we will add meetings to a data structure that sorts them by 
 data structure that pops elements with a condition? a heap!
 
 So this is how things would look (leftmost element is the elt at the top of the heap): <br>
-i = 0: [0, 30] <br>  
-i = 1: [5, 10], [0, 30] <br>
-i = 2: [15, 20], [0, 30] <br>
+i = 0: [0, 30] 
+
+i = 1: [5, 10], [0, 30]
+
+i = 2: [15, 20], [0, 30] 
 
 Whatever's left in the heap is the maximum no. of meetings that are occuring simulataneously -> aka our answer! 
 
