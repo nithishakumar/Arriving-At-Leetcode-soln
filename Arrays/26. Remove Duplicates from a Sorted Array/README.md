@@ -12,4 +12,4 @@ So, it actually has to start from 1. This is because we are still preserving one
 so even if the first element had a duplicate, we will preserve the first element with the duplicated value and only 
 change the second with the next unique value.
 Every time a new value is added to the position the index counter points too, we increment it. At the end,
-the index counter would be equal to the size of the array.
+the index counter would be equal to the size of the new array with only unique values.
