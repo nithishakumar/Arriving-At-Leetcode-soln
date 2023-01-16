@@ -4,7 +4,7 @@
 Let's look at the brute-force approach. You're going through every sub-array and calculating its 
 sum to check whether it's equal to K.
 
-Consider [1, 2, 3, 4, 5]: <br>
+Consider [1, 2, 3, 4, 5]: <br> <br>
 You're doing [1] <br>
              [1 + 2]
              [1 + 2 + 3] <br>
@@ -27,15 +27,15 @@ In this case, our map would contain the following values until now: <br>
 [0] -> 2 <br>
 [1] -> 2 <br>
 [2] -> 1 <br>
-We can chop off 0 in 2 ways ([0], [0, 1, -1]) from our current subarray ([0 1 -1 1 1 4]) to get a sum of 6. <br>
+We can chop off 0 in 2 ways ([0], [0, 1, -1]) from our current subarray ([0 1 -1 1 1 4]) to get a sum of 6. 
 
 But is that all? No! We can also chop off nothing to get the subarray [0 1 -1 1 1 4] which also adds up to 6.
-So, by default we will set [0] = 1 before iterating so that we can account for the "chop off nothing" case. <br>
+So, by default we will set [0] = 1 before iterating so that we can account for the "chop off nothing" case. 
 
 So, we can chop off a sum of 0 in 3 ways: [], [0], [0, 1, -1] to get our subarray of sum 6 so far. Thus, we will
-add 3 to our answer for [0 1 -1 1 1 4], [1 -1 1 1 4], and [1 1 4] -> all of which add up to 6. <br>
+add 3 to our answer for [0 1 -1 1 1 4], [1 -1 1 1 4], and [1 1 4] -> all of which add up to 6. 
 
-To be more clear, here's why we add [0] = 1 to our map before iterating: <br>
+To be more clear, here's why we add [0] = 1 to our map before iterating: 
 Look at this array [6] when k = 6. <br>
 If we iterate through this array and then do map.find(6 - 6) to look for a 0, we get nothing and our ans ends up being 0. But that's wrong!
 We do have a subarray that adds up to 6. So, we will add a [0] -> 1 to our array for the empty subarray before iterating.
