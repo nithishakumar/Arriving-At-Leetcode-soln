@@ -15,7 +15,7 @@ our map would have:
 would increase our time complexity to O(n).
 But, we can use the last element to fill in the gap, since the pop_back() operation is O(1).
 
-Say we have the elements {0, 1, 2, 3, 4, 5}. We remove 3. We get {0, 1, 2, _, 4}. We can replace the element 
+Say we have the elements {0, 1, 2, 3, 4, 5}. We remove 3. We get {0, 1, 2, _, 4, 5}. We can replace the element 
 at the index we removed with the last index and pop_back the last element to get {0, 1, 2, 5, 4} .
 Now we remove {3, 4} from the map (3 was present at idx 4) and update {5, 5} in the map (5 was present at idx 5) 
 to {5, 4} as 5 is now present in 3's old position. 
