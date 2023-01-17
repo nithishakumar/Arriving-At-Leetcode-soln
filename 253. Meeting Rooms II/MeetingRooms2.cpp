@@ -11,6 +11,7 @@ struct comp {
         return lhs[1] > rhs[1];
     }
 };
+// O(nlogn) time, O(n) memory
 int minMeetingRooms(vector<vector<int>>& intervals) {
     sort(intervals.begin(), intervals.end());
     priority_queue<vector<int>, vector<vector<int>>, comp> pq;
