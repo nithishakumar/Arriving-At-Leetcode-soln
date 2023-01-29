@@ -47,6 +47,7 @@ Soln:
  - Check to see if sum - k exists in the map. If it does, add the value it maps to your final ans for how many ways you can chop sub arrays to get this sum.
  - Do map[sum]++
 
+> Similar problem:https://leetcode.com/problems/path-sum-iv/
 
 
 
