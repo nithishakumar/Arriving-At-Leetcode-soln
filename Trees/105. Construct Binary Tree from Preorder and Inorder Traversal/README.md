@@ -3,6 +3,16 @@
 
 First, I'll do a preorder and inorder traversal of a binary tree to make the following observations.
 
+
+<p align="center">
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Arrays/42.%20Trapping%20Rain%20Water%20-%20ToDo%20O(1)%20memory/img/rainwatertrap.png" /> 
+ </p>
+
+
+<p align="center">
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Arrays/42.%20Trapping%20Rain%20Water%20-%20ToDo%20O(1)%20memory/img/rainwatertrap.png" /> 
+ </p>
+
 So, we have a recursive function to first create the root of the tree from the first element of the preorder array. 
 Now what's the left child of this node? The root of the left subtree - aka the next element of our preorder array.
 
