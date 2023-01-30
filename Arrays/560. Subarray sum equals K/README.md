@@ -47,7 +47,15 @@ Soln:
  - Check to see if sum - k exists in the map. If it does, add the value it maps to your final ans for how many ways you can chop sub arrays to get this sum.
  - Do map[sum]++
 
-> Similar problem:https://leetcode.com/problems/path-sum-iv/
+Why are we adding the sum to the map after checking only after checking if sum - targetSum exists in the map already??
+
+Consider k = 0 and the array [1].
+
+In the first iteration, if we add 1 to the map and then check if 1 - 0 exists in the map, we'll end up adding 1 to our answer. But the answer is 0.
+
+We want to know how many previously encountered subarrays can be chopped from the current running sum to get our target sum. We can't chop the current subarray from itself to get an empty subarray that adds up to k.
+
+> Similar problem: https://leetcode.com/problems/path-sum-iii/
 
 
 
