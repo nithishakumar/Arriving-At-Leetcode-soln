@@ -15,7 +15,7 @@ flip all the unsurrounded cells with temporary symbols back to Os!!!
 
 
 <p align="center">
-  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Trees/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal/img/preorder.png" /> 
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Trees/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal/img/preorder.png](https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Graphs/130.%20Surrounded%20Regions/img/FlipXOs.png" /> 
  </p>
 
 Soln:
