@@ -13,8 +13,8 @@ To find how many can reach a specific ocean from a row/column, we just have to k
 the cells until we cannot anymore: that is, until we have exhausted the cells or until the height condition doesn't
 hold anymore.
 
-Then, to find the cells that can travel to both the atlantic and Pacific ocean, we have to just take the intersection
-of tbe data structures that store the values for Atlantic and Pacific.
+Then, to find the cells that can travel to both the Atlantic and Pacific ocean, we have to just take the intersection
+of the data structures that store the values for Atlantic and Pacific.
 
 Important thing to note about the height condition: if we were travelling from each cell to the Pacific/Atlantic
 ocean, we would check if the neighbor's height <= current cell's height.
