@@ -9,7 +9,7 @@ and put the minimum distance to get to these regions in your room cells.
 Let's say we want to find the minimum distance for (1, 0). We can go up, down, left right and take the min of these values and store this
 at (1, 0).
 
-We have to do that for every room, because if we just do one room, we want end up filling the answer for everything - resulting in the time complexity of this to be O((m x n)^2). 
+We have to do that for every room, because if we just do one room (try it!!!), we want end up filling the answer for everything - resulting in the time complexity of this to be O((m x n)^2). 
 
 Okay, not great. How about we just do a BFS from the rooms then? Start at (1, 0) - we will say it has a distance of 0. Add its neighbors from all
 four directions into the queue and mark them as visited. All it's neighbors have a distance of 1. Once we mark a node as visited, we will never visit it again,
