@@ -17,7 +17,7 @@ and we will never update it's value after getting to the gate!!!
 
 
 <p align="center">
-  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Graphs/130.%20Surrounded%20Regions/img/FlipXOs.png" /> 
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Graphs/286.%20Walls%20and%20Gates/img/Issue%20with%20BFS.png" /> 
  </p>
 
 
