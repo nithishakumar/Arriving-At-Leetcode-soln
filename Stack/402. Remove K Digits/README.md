@@ -16,11 +16,12 @@ We could remove 8, we would get 3449
 
 We could remove 9, we would get 3484
 
-Removing 8 is the best. That is, we're removing the greatest number from the left.
+Removing 8 is the best. That is, we're removing the greatest digit from the left.
 
 Consider 123456 with k = 3
 
-We would remove 4, 5, and 6 here to get 123. We can see that we're removing the first instance of the k greatest digits.
+We would remove 4, 5, and 6 here to get 123. We can see that we're removing the k greatest digits. But, we know that the last digit is the greatest and removing
+these last digits would over the smaller digits that occur before would give us the smallest number.
 
 Consider 654321 with k = 3
 
