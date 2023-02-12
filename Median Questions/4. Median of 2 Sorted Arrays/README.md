@@ -4,7 +4,7 @@
 The easy O(m + n) solution is to just merge the two sorted arrays and then pick the middle element if the size of the array is odd or the average of the middle 2 elements otherwise.
 
 To optimize this, in any median question, we have to figure out how to partition the array correctly so that the elements to the left of the median are all less than the elements to the
-right of the median.
+right of the median and both partitions's size is about half of the total number of elements.
 
 Say we have two sorted arrays of size m and n where m < n.
 
