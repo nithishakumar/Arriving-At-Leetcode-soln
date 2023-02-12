@@ -7,7 +7,7 @@
 > Given an m x n matrix grid containing an odd number of integers where each row is sorted in non-decreasing order, return the median of the matrix. You must solve the problem in less than O(m * n) time complexity.
 
 <p align="center">
-  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Arrays/42.%20Trapping%20Rain%20Water%20-%20ToDo%20O(1)%20memory/img/rainwatertrap.png" /> 
+  <img src="https://github.com/nithishakumar/arriving-at-DSA-solns/blob/main/Median%20Questions/2387.%20Median%20of%20Row%20Wise%20Sorted%20Matrix/img/Examples.png" /> 
  </p>
 
 In sorted matrix problems when the time complexity has to be less than O(mn), you usually have to do some sort of binary search. 
