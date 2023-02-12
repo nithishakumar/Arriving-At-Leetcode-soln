@@ -1,4 +1,4 @@
-# 2387. Median of Row Wise Sorted Matrix 📊
+# 2387. Median of Row Wise Sorted Matrix 👩‍💻
 
 > View the problem at: https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/
 
