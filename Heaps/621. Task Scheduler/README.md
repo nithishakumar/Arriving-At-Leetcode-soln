@@ -33,7 +33,7 @@ queue. Then, I'll have a separate data structure that stores the tasks with thei
 back into the priority queue and choose between all tasks that are available at any given moment based on their count.
 
 What's a good data structure for storing all the tasks remaining? All tasks that are completed are waiting in a queue until it's their turn to be available for completion. A queue would 
-make a lot of sense because the task that was first added to it is guaranteed to have a lesser value for the time it's next available at compared to later tasks that are added to it.
+make a lot of sense because the task that was first added to it is guaranteed to have a lesser value for the time it's next available at compared to later tasks that are added to it. We want all the tasks remaining to be in sorted order wrt to the time they're next available at since we want to pick the task that's available the soonest.
 
 Soln:
 1. Count the freq of all tasks
