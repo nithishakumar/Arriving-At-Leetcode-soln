@@ -30,7 +30,7 @@ task which is high priority right now since it's present in the greatest number 
 
 We need to make sure all tasks that are available at any given moment are in the priority queue at that time. Okay then, I'll store the count of all tasks available at time = 0 in the priority
 queue. Then, I'll have a separate data structure that stores the tasks with their count and the time they're next available at. So that, when I reach that time, I'll just add those tasks
-back into the priority queue and choose between all tasks tht are available at any given moment based on their count.
+back into the priority queue and choose between all tasks that are available at any given moment based on their count.
 
 What's a good data structure for storing all the tasks remaining? All tasks that are completed are waiting in a queue until it's their turn to be available for completion. A queue would 
 make a lot of sense.
