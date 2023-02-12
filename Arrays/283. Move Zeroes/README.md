@@ -4,7 +4,7 @@
 Looking at the first example, my instant thought is to iterate through the array, increment a zero counter if you find a zero,
 or add non-zero element to the beginning of the array using the insert function.
 
-This is not ideal since the insert function will increase the time complexity to O(n).
+This is not ideal since the insert function will increase the time complexity to O(n^2).
 
 Why not save the position of the last zero element with a pointer 
 and swap it with the current non-zero element's position?
