@@ -19,7 +19,7 @@ of the right partition. So, we will check exactly that.
 
 Say the end of our left partition is marked by ALeft and BLeft in both arrays. The start of the right partition would be BRight and ARight. Check if ALeft <= BRight and BLeft <= ARight.
 
-If this is true, we've partition everything correctly. If the total elements we have is odd, we have to pick the middle element. 
+If this is true, we've partitioned everything correctly. If the total elements we have is odd, we have to pick the middle element. 
 
 A: 1 1 
 
