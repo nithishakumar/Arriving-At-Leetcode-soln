@@ -16,9 +16,13 @@ I'm not choosing between all tasks available at a given moment.
 Let's say I have the following tasks with their count:
 
 A 3
+
 B 3
+
 C 3
+
 D 2
+
 E 1
 
 When I've completed 2 of A, B, and C and their count has reduced to 1, my priority queue is not empty yet so I don't look at D. When In reality, I should be doing D first since it's the
