@@ -1,6 +1,9 @@
 # Graph Problem Tips!
 
 ## Time Complexity - BFS & DFS 
+
+PLEASE DON'T MEMORIZE THIS - Think exactly how many edges you're visiting and if you're visiting any nodes without edges. That's primarily how you will determine time complexity for these graph questions.
+
 #### Grid problems with m x n matrices: 
 in the worst case, you visit every cell from the starting point in the grid. This will result in O(m x n) time complexity. If you do a dfs from every cell, you'll end up with a time complexity of O((mn)^2).
 
